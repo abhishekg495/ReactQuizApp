@@ -25,7 +25,7 @@ body {
   min-height: 200px;
   height: min-content;
   border-radius: 15px;
-  padding: 20px;
+  padding: 20px 20px;
   box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
   display: flex;
   justify-content: space-evenly;
@@ -81,7 +81,7 @@ button {
   border-radius: 15px;
   display: flex;
   padding: 5px;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   border: 5px solid #234668;
   cursor: pointer;
@@ -105,4 +105,65 @@ button:focus {
 
 button svg {
   margin-right: 5px;
+}
+
+input{
+  color:black;
+  border-radius: 10px;
+  padding: 10px;
+}
+select, option{
+  background-color: #454d6a;
+}
+
+
+.question-input{
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.question-input > input{
+  width:100%;
+  margin:20px 0px;
+  font-size: large;
+}
+
+.option-input{
+  border: none;
+  display: flex;
+  flex-wrap: none;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.option-input > input{
+  width: 60%;
+  padding: 7px;
+  font-size: small;
+}
+
+.option-input > select, .option-input > option{
+  text-align: center;
+  width: 30%;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: small;
+}
+
+.question-button{
+  margin-top:20px;
+  margin-bottom:10px;
+}
+
+.create-questions{
+  display:flex;
+  flex-direction: column;
+}
+
+.question{
+  width:100%;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
 }
